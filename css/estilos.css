@@ -1,0 +1,255 @@
+/* 
+	Projeto: PodSemFio
+	Autor: Marcelo Glacial
+	Início: 13/09/2007
+	Ultima alteracao: 13/09/2007
+	Por: Marcelo Glacial
+*/
+
+/* Reset
+-------------------------------------------------------------------------- */
+* {
+	margin:0;
+	padding:0;
+}
+hr {
+	display:none;
+}
+a {
+	color:#AB10D2;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+
+/* Navegacao ------------ */
+#Navegacao {
+	display:none;
+}
+
+/* Basicas
+-------------------------------------------------------------------------- */
+html {
+	background:url(../img/sidebar_fundo.jpg) center bottom repeat-x;  /* fundo da sidebar */
+}
+body {
+	border-top:solid 5px #000;
+	
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#585858;
+	background:url(../img/conteudo_fundo.jpg) center 360px repeat-x;  /* fundo do conteudo */
+}
+
+/* Site
+-------------------------------------------------------------------------- */
+#Site {
+	width:650px;
+	margin:0 auto;
+}
+
+/* Cabecalho
+-------------------------------------------------------------------------- */
+#Cabecalho h1 a {
+	display:block;
+	text-indent:-9999px;
+	background:url(../img/cabecalho_fundo.jpg);
+	width:232px;
+	height:56px;
+	margin-top:40px;
+}
+#Cabecalho .descricao {
+	display:none;
+}
+
+/* Sobre
+-------------------------------------------------------------------------- */
+#Sobre {
+	position:absolute;
+	top:120px;
+	width:650px;
+	background:url(../img/cabecalho_bia.jpg) left top no-repeat;
+	padding-top:170px;
+}
+#Sobre h2 {
+	font-family:"Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	font-size:120%;
+	color:#6D046B;	
+	
+	float:left;
+	width:240px;
+}
+#Sobre p {
+	font-size:70%;
+	margin-left:240px;
+	line-height:1.5em;
+}
+
+/* Conteudo 
+-------------------------------------------------------------------------- */
+#Conteudo {
+	margin-top:280px;
+}
+#Posts {
+	padding:20px 20px 0 20px;
+}
+#Posts .post {
+	position:relative;
+	margin:0 0 50px 180px;
+	padding-left:40px;
+	background:url(../img/posts_fundo.jpg) left 5px no-repeat;
+}
+#Posts h3 a {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#6D046B;
+	font-size:90%;
+}
+#Posts h3 a:hover {
+	text-decoration:none;
+}
+#Posts p.data {
+	position:absolute;
+	left:-165px;
+	_left:-205px;
+	padding-left:80px;
+	background:url(../img/data_fundo.gif) no-repeat;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#6D046B;
+}
+#Posts p.data .dia,
+#Posts p.data .mes,
+#Posts p.data .ano {
+	display:block;
+	padding-bottom:5px;
+	font-size:200%;
+}
+#Posts .separador {
+	display:none;
+}
+#Posts .post p {
+	font-size:70%;
+	line-height:1.7em;
+}
+#Posts p a {
+	padding:3px 5px;
+}
+#Posts p a:hover {
+	color:#6D046B;
+	background:#FFD9FF;
+	text-decoration:none;
+}
+#Posts .post img {
+/*	display:block;
+	margin:0 auto;
+	border:solid 3px #FFD9FF;
+	margin:3px;*/
+}
+#Posts ul {
+	margin:16px;
+	font-size:70%;
+	line-height:1.5em;
+}
+
+/* Assine 
+-------------------------------------------------------------------------- */
+#Assine {
+	border-top:solid 1px #F1F1F1;
+	padding-top:20px;
+}
+#Assine h2 {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#6D046B;
+	letter-spacing:-2px;
+	font-size:150%;
+	float:left;
+	width:200px;
+}
+#Assine h2 em {
+	color:#FF13FF;
+	font-style:normal;
+}
+#Assine ul {
+	list-style:none;
+	float:left;
+}
+#Assine ul li {
+	height:25px;
+}
+#Assine ul.rss {
+	width:150px;
+	font-size:70%;
+}
+#Assine ul.rss img {
+	float:left;
+	margin-right:5px;
+}
+#Assine ul.servicos {
+	width:300px;
+}
+#Assine ul.servicos li {
+	width:100px;
+	float:left;
+}
+#Assine img {
+	border:0;
+}
+
+/* Sidebar
+-------------------------------------------------------------------------- */
+#Sidebar {
+	clear:both;
+	height:285px;
+	padding-top:35px;
+}
+#Sidebar #Recentes {
+	float:left;
+	width:350px;
+}
+#Sidebar #Arquivo {
+	margin:0 10px 0 450px;
+	text-align:right;
+}
+#Sidebar h2 {
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#FFF;
+	letter-spacing:-2px;
+	font-size:150%;
+	border-bottom:solid 1px #AD1FAA;
+	padding-bottom:5px;
+}
+#Sidebar h2 em {
+	color:#FF13FF;
+	font-style:normal;
+}
+#Sidebar ul {
+		list-style:none;
+}
+#Sidebar ul li {
+	border-bottom:solid 1px #AD1FAA;
+	_min-height:1%;
+}
+#Sidebar ul li a {
+	display:block;
+	padding:7px;
+	color:#FFF;
+	font-size:75%;
+}
+#Sidebar ul li a:hover {
+	text-decoration:none;
+	background:#99018F;
+	color:#FFF;
+}
+
+/* Rodape
+-------------------------------------------------------------------------- */
+#Rodape {
+	clear:both;
+	padding-bottom:23px;
+	font-size:70%;
+	text-transform:lowercase;
+	text-align:center;
+	color:#999;
+}
+#Rodape div {
+	display:inline;
+}
